@@ -28,10 +28,10 @@ const AboutSection = () => {
   ];
 
   const certifications = [
-    "AWS Solutions Architect",
-    "Google Cloud Professional",
+    "Solutions Architect",
+    "Azure AI Engineer Associate",
     "Microsoft Azure Expert",
-    "Certified Kubernetes Administrator",
+    "DevOps Engineer Expert",
     "Machine Learning Engineer"
   ];
 

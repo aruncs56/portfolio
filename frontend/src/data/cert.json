@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Azure Fundamentals",
+        "credentialId": "3E12883AB48BEAC2",
+        "certificationNumber": "608820-3D352U",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/3E12883AB48BEAC2?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Azure Developer Associate",
+        "credentialId": "65EB64818C1FA646",
+        "certificationNumber": "0BA46L-81959F",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/65EB64818C1FA646?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "DevOps Engineer Expert",
+        "credentialId": "20280CA8A2B1BF38",
+        "certificationNumber": "34552D-AC5EH4",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/20280CA8A2B1BF38?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Azure Administrator Associate",
+        "credentialId": "E381B8C5465C8372",
+        "certificationNumber": "1D8DC6-848DFC",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/E381B8C5465C8372?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Azure Solutions Architect Expert",
+        "credentialId": "941FC4C3F2EC2CF5",
+        "certificationNumber": "BET681-A12619",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/941FC4C3F2EC2CF5?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Azure AI Fundamentals",
+        "credentialId": "8FFA5E048F55C420",
+        "certificationNumber": "9047YD-308649",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/8FFA5E048F55C420?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Azure AI Engineer Associate",
+        "credentialId": "D4D4C4A5D3B1E6F7",
+        "certificationNumber": "12345X-67890Y",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/AF884A139559B713?sharingId=DC05F8FAF2B0E8C6"
+    } 
+]

@@ -36,16 +36,16 @@ const Header = () => {
               Experience
             </button>
             <button 
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection('certications')}
               className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
-              Projects
+              Certications
             </button>
             <button 
-              onClick={() => scrollToSection('skills')}
+              onClick={() => scrollToSection('appliedskills')}
               className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
-              Skills
+              Applied Skills
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -88,16 +88,16 @@ const Header = () => {
                 Experience
               </button>
               <button 
-                onClick={() => scrollToSection('projects')}
+                onClick={() => scrollToSection('certications')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200 text-left"
               >
-                Projects
+                Certications
               </button>
               <button 
-                onClick={() => scrollToSection('skills')}
+                onClick={() => scrollToSection('appliedskills')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200 text-left"
               >
-                Skills
+                Applied Skills
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}

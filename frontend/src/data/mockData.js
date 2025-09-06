@@ -2,12 +2,12 @@ export const mockData = {
   experiences: [
     {
       id: 1,
-      company: "TechCorp Solutions",
-      position: "Senior Solution Architect",
-      period: "2020 - Present",
+      company: "DXC Technology",
+      position: "Senior Consultant",
+      period: "2022 - Present",
       location: "Bangalore, India",
       description: "Leading architecture design for cloud-native applications serving 2M+ users. Implemented microservices architecture reducing system downtime by 40%. Mentoring team of 15+ engineers.",
-      technologies: ["AWS", "Kubernetes", "Python", "React", "MongoDB", "AI/ML"],
+      technologies: ["Azure", "C#", ".Net 6", "Blazore", "MSSQL", "AI/ML"],
       achievements: [
         "Designed scalable architecture handling 10x traffic growth",
         "Reduced infrastructure costs by 35% through optimization",
@@ -16,12 +16,12 @@ export const mockData = {
     },
     {
       id: 2,
-      company: "InnovateLabs",
-      position: "AI Solutions Lead",
-      period: "2018 - 2020",
-      location: "Chennai, India",
+      company: "ExamRoom.AI India Private Limited",
+      position: "Module Lead",
+      period: "2020 - 2022",
+      location: "Bangalore, India",
       description: "Spearheaded AI initiative development and implementation. Built recommendation systems and NLP solutions for e-commerce platform. Collaborated with data science teams on ML model deployment.",
-      technologies: ["TensorFlow", "PyTorch", "Python", "Docker", "GCP", "FastAPI"],
+      technologies: [".Net Core 3.1", "EF Core 3.1.14", "Swagger", "Automapper", "Angular", "Material Components", "Serilog 4.1.0", "AWS SES", "AWS S3 bucket"],
       achievements: [
         "Implemented AI recommendation system improving conversion by 25%",
         "Deployed 5+ ML models in production environment",
@@ -30,32 +30,18 @@ export const mockData = {
     },
     {
       id: 3,
-      company: "CodeCraft Technologies",
-      position: "Senior Software Developer",
-      period: "2015 - 2018",
-      location: "Mumbai, India",
+      company: "Prov, Inc",
+      position: "Software Developer",
+      period: "2017 - 2020",
+      location: "Bangalore, India",
       description: "Developed full-stack web applications using modern frameworks. Implemented DevOps practices and CI/CD pipelines. Collaborated with cross-functional teams on product development.",
-      technologies: ["Java", "Spring Boot", "Angular", "PostgreSQL", "Jenkins", "Docker"],
+      technologies: [".Net Core 3.1", "EF Core 3.1.14", "Swagger", "Automapper", "Angular", "Material Components", "Serilog 4.1.0", "AWS SES", "AWS S3 bucket"],
       achievements: [
         "Built 8+ enterprise applications from ground up",
         "Implemented automated testing reducing bugs by 50%",
         "Established development best practices and coding standards"
       ]
-    },
-    {
-      id: 4,
-      company: "StartupVenture",
-      position: "Full Stack Developer",
-      period: "2012 - 2015",
-      location: "Hyderabad, India",
-      description: "Early-stage startup experience building MVP products. Worked across the entire technology stack from database design to frontend implementation. Participated in product strategy and technical decisions.",
-      technologies: ["Node.js", "Express", "React", "MongoDB", "AWS", "Redis"],
-      achievements: [
-        "Developed MVP that secured $2M in Series A funding",
-        "Built real-time collaboration features for 1000+ users",
-        "Optimized application performance achieving 2x speed improvement"
-      ]
-    }
+    } 
   ],
 
   projects: [
@@ -127,18 +113,14 @@ export const mockData = {
 
   skills: {
     technical: [
-      { name: "Python", level: 95, category: "Programming" },
-      { name: "JavaScript/TypeScript", level: 90, category: "Programming" },
-      { name: "Java", level: 85, category: "Programming" },
-      { name: "Go", level: 80, category: "Programming" },
-      { name: "React/Next.js", level: 90, category: "Frontend" },
-      { name: "Node.js", level: 85, category: "Backend" },
-      { name: "FastAPI/Django", level: 90, category: "Backend" },
-      { name: "Spring Boot", level: 85, category: "Backend" },
-      { name: "AWS/GCP/Azure", level: 90, category: "Cloud" },
-      { name: "Kubernetes/Docker", level: 88, category: "DevOps" },
+      { name: "C#", level: 95, category: "Programming" },
+      { name: "JavaScript/TypeScript", level: 90, category: "Programming" }, 
+      { name: "React,Angular,Blazor", level: 90, category: "Frontend" }, 
+      { name: ".NET 6/7, ASP.NET Core, Entity Framework Core, Dapper, ASP.NET Web API  ", level: 85, category: "Backend" },
+      { name: "Azure, AWS", level: 90, category: "Cloud" },
+      { name: "Azure DevOps,GitHub Action,Docker,Kubernetes", level: 88, category: "DevOps" }, 
       { name: "TensorFlow/PyTorch", level: 82, category: "AI/ML" },
-      { name: "MongoDB/PostgreSQL", level: 85, category: "Database" }
+      { name: "SQL Server, PostgreSQL, MySQL", level: 85, category: "Database" }
     ],
     soft: [
       "Technical Leadership",

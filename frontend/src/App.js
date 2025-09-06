@@ -11,19 +11,24 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import CaseStudiesSection from "./components/CaseStudiesSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import Certification from "./components/Certification";
+import AppliedSkill from "./components/AppliedSkill";
 import { Toaster } from "./components/ui/toaster";
+
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection />
+  {/* <HeroSection /> */}
       <AboutSection />
+  <Certification />
+  <AppliedSkill />
       <ExperienceSection />
-      <ProjectsSection />
+    { /* <ProjectsSection />
       <SkillsSection />
       <TestimonialsSection />
-      <CaseStudiesSection />
+      <CaseStudiesSection />*/}
       <ContactSection />
       <Footer />
       <Toaster />
@@ -31,12 +36,14 @@ const Portfolio = () => {
   );
 };
 
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Portfolio />} />
+          <Route path="/certification" element={<Certification />} />
         </Routes>
       </BrowserRouter>
     </div>

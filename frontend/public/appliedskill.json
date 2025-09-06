@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Deploy and configure Azure Monitor",
+        "credentialId": "B18E44B027A1610F",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/B18E44B027A1610F?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Build a natural language processing solution with Azure AI Language",
+        "credentialId": "6D47333B1798179C",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/6D47333B1798179C?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Create an intelligent document processing solution with Azure AI Document Intelligence",
+        "credentialId": "3CB4BF94D4C2C965",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/3CB4BF94D4C2C965?sharingId=DC05F8FAF2B0E8C6"
+    }
+]

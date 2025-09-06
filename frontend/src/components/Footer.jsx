@@ -69,18 +69,18 @@ const Footer = () => {
                 </li>
                 <li>
                   <button 
-                    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => document.getElementById('certications')?.scrollIntoView({ behavior: 'smooth' })}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    Projects
+                    Certications
                   </button>
                 </li>
                 <li>
                   <button 
-                    onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => document.getElementById('appliedskills')?.scrollIntoView({ behavior: 'smooth' })}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    Skills
+                    Applied Skills
                   </button>
                 </li>
               </ul>
