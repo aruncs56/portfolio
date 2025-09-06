@@ -5,7 +5,7 @@ export default function Certification() {
     const [certifications, setCertifications] = useState([]);
 
     useEffect(() => {
-        fetch("/cert.json")
+        fetch("/portfolio/cert.json")
             .then((res) => res.json())
             .then((data) => setCertifications(data));
     }, []);

@@ -4,7 +4,7 @@ export default function AppliedSkill() {
     const [skills, setSkills] = useState([]);
 
     useEffect(() => {
-        fetch("/appliedskill.json")
+        fetch("/portfolio/appliedskill.json")
             .then((res) => res.json())
             .then((data) => setSkills(data));
     }, []);

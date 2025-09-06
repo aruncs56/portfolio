@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
@@ -40,10 +40,11 @@ const Portfolio = () => {
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
         <Routes>
           <Route path="/" element={<Portfolio />} />
           <Route path="/certification" element={<Certification />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </div>
