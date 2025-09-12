@@ -25,6 +25,7 @@ const Portfolio = () => {
   <Certification />
   <AppliedSkill />
       <ExperienceSection />
+      <SkillsSection />
     { /* <ProjectsSection />
       <SkillsSection />
       <TestimonialsSection />

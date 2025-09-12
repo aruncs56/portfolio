@@ -28,22 +28,40 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Mock form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch(
+        'https://tvxkqxalcydygtxpmdtx.supabase.co/functions/v1/Contact-Form-Supabase-Edge-Function',
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2eGtxeGFsY3lkeWd0eHBtZHR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY5NzE3MjksImV4cCI6MjA3MjU0NzcyOX0.7LZ4AGaMEofcwK4p4JoSEjPyV_oQTIZorLbrgK3knZ4',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
       toast({
-        title: "Message Sent!",
+        title: 'Message Sent!',
         description: "Thank you for your interest. I'll get back to you within 24 hours.",
       });
-      
       setFormData({
         name: '',
         email: '',
         company: '',
         message: ''
       });
+    } catch (error) {
+      toast({
+        title: 'Error',
+        description: 'There was a problem sending your message. Please try again later.',
+        variant: 'destructive',
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const contactInfo = [

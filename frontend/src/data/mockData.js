@@ -127,15 +127,14 @@ export const mockData = {
       "Solution Architecture",
       "Team Mentoring",
       "Agile Methodologies",
-      "Product Strategy",
-      "Stakeholder Management"
+      "Product Strategy" 
     ]
   },
 
   testimonials: [
     {
       id: 1,
-      name: "Sarah Chen",
+      name: "Shiva Kumar S",
       position: "VP of Engineering",
       company: "TechCorp Solutions",
       content: "Arun's architectural vision and leadership have been instrumental in our digital transformation. His ability to design scalable solutions while mentoring the team is exceptional.",
@@ -143,7 +142,7 @@ export const mockData = {
     },
     {
       id: 2,
-      name: "Michael Rodriguez",
+      name: "Sachin Suresh",
       position: "CTO",
       company: "InnovateLabs",
       content: "Working with Arun on our AI initiatives was a game-changer. His deep understanding of both business requirements and technical implementation made our ML projects successful.",
@@ -151,7 +150,7 @@ export const mockData = {
     },
     {
       id: 3,
-      name: "Jennifer Kim",
+      name: "Deva",
       position: "Product Manager",
       company: "CodeCraft Technologies",
       content: "Arun consistently delivered high-quality solutions on time. His attention to detail and proactive communication made complex projects feel manageable and successful.",
