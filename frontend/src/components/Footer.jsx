@@ -67,6 +67,12 @@ const Footer = () => {
                     Experience
                   </button>
                 </li>
+                <li> <button
+                onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
+              className="hover:text-white transition-colors duration-200"
+            >
+              Skills
+            </button></li>
                 <li>
                   <button 
                     onClick={() => document.getElementById('certications')?.scrollIntoView({ behavior: 'smooth' })}

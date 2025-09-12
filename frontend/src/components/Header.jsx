@@ -20,34 +20,40 @@ const Header = () => {
           <div className="font-bold text-xl text-gray-900">
             Arun Kumar M
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <button 
+            <button
               onClick={() => scrollToSection('about')}
               className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
               About
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('experience')}
               className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
               Experience
             </button>
-            <button 
+            <button
+              onClick={() => scrollToSection('skills')}
+              className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+            >
+              Skills
+            </button>
+            <button
               onClick={() => scrollToSection('certications')}
               className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
               Certications
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('appliedskills')}
               className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
               Applied Skills
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
@@ -55,7 +61,7 @@ const Header = () => {
             </button>
           </nav>
 
-          <Button 
+          <Button
             onClick={() => scrollToSection('contact')}
             className="hidden md:inline-flex bg-gray-900 hover:bg-gray-800 text-white"
           >
@@ -75,31 +81,31 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
-              <button 
+              <button
                 onClick={() => scrollToSection('about')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200 text-left"
               >
                 About
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('experience')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200 text-left"
               >
                 Experience
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('certications')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200 text-left"
               >
                 Certications
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('appliedskills')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200 text-left"
               >
                 Applied Skills
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200 text-left"
               >

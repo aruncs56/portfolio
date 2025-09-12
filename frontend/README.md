@@ -61,9 +61,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Deployment (GitHub Pages)
+
+This project is ready to deploy to GitHub Pages. Follow these steps:
+
+1. **Set the homepage**
+	- The `homepage` field in `package.json` is already set to `https://aruncs56.github.io/portfolio`.
+
+2. **Build the project**
+	- Run:
+	  ```
+	  yarn build
+	  # or
+	  npm run build
+	  ```
+
+3. **Deploy to GitHub Pages**
+	- Run:
+	  ```
+	  yarn deploy
+	  # or
+	  npm run deploy
+	  ```
+	- This will publish the contents of the `build` folder to the `gh-pages` branch of your repository.
+
+4. **Access your site**
+	- Visit: https://aruncs56.github.io/portfolio
+
+For more details, see the [Create React App deployment guide](https://create-react-app.dev/docs/deployment/).
 
 ### `npm run build` fails to minify
 
