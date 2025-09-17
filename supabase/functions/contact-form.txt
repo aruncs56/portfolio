@@ -1,0 +1,128 @@
+// supabase/functions/contact-form/index.ts
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type'
+};
+serve(async (req)=>{
+  // Handle CORS preflight requests
+  if (req.method === 'OPTIONS') {
+    return new Response('ok', {
+      headers: corsHeaders
+    });
+  }
+  try {
+    // Initialize Supabase client
+    const supabaseClient = createClient(Deno.env.get('SUPABASE_URL') ?? '', Deno.env.get('SUPABASE_ANON_KEY') ?? '', {
+      global: {
+        headers: {
+          Authorization: req.headers.get('Authorization')
+        }
+      }
+    });
+    // Only allow POST requests
+    if (req.method !== 'POST') {
+      return new Response(JSON.stringify({
+        error: 'Method not allowed'
+      }), {
+        status: 405,
+        headers: {
+          ...corsHeaders,
+          'Content-Type': 'application/json'
+        }
+      });
+    }
+    // Parse request body
+    const formData = await req.json();
+    // Validate required fields
+    const { name, email, company, message } = formData;
+    if (!name || !email || !message) {
+      return new Response(JSON.stringify({
+        error: 'Missing required fields. Name, email, and message are required.'
+      }), {
+        status: 400,
+        headers: {
+          ...corsHeaders,
+          'Content-Type': 'application/json'
+        }
+      });
+    }
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return new Response(JSON.stringify({
+        error: 'Invalid email format'
+      }), {
+        status: 400,
+        headers: {
+          ...corsHeaders,
+          'Content-Type': 'application/json'
+        }
+      });
+    }
+    // Insert data into contactmessages table
+    const { data, error } = await supabaseClient.from('contactmessages').insert([
+      {
+        name: name.trim(),
+        email: email.trim().toLowerCase(),
+        company: company?.trim() || null,
+        message: message.trim(),
+        createdat: new Date().toISOString()
+      }
+    ]).select();
+    if (error) {
+      console.error('Database error:', error);
+      return new Response(JSON.stringify({
+        error: 'Failed to save contact message',
+        details: error.message
+      }), {
+        status: 500,
+        headers: {
+          ...corsHeaders,
+          'Content-Type': 'application/json'
+        }
+      });
+    }
+    // Return success response
+    return new Response(JSON.stringify({
+      success: true,
+      message: 'Contact message saved successfully',
+      data: data[0]
+    }), {
+      status: 200,
+      headers: {
+        ...corsHeaders,
+        'Content-Type': 'application/json'
+      }
+    });
+  } catch (error) {
+    console.error('Unexpected error:', error);
+    return new Response(JSON.stringify({
+      error: 'Internal server error',
+      details: error.message
+    }), {
+      status: 500,
+      headers: {
+        ...corsHeaders,
+        'Content-Type': 'application/json'
+      }
+    });
+  }
+}) /*
+DEPLOYMENT:
+1. mkdir -p supabase/functions/contact-form
+2. Save as supabase/functions/contact-form/index.ts
+3. supabase functions deploy contact-form
+
+ENDPOINT:
+POST https://YOUR_PROJECT_ID.supabase.co/functions/v1/contact-form
+
+BODY (JSON):
+{
+  "name": "John Doe",
+  "email": "john@example.com", 
+  "company": "Acme Corp",
+  "message": "Hello world"
+}
+*/ ;
