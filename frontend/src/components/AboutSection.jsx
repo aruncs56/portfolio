@@ -43,7 +43,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Passionate software architect with 12+ years of experience building enterprise-scale applications, 
+            Passionate software architect with 13+ years of experience building enterprise-scale applications, 
             leading technical teams, and implementing cutting-edge AI solutions.
           </p>
         </div>
