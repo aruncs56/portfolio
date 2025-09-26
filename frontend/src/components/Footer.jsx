@@ -75,10 +75,10 @@ const Footer = () => {
             </button></li>
                 <li>
                   <button 
-                    onClick={() => document.getElementById('certications')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => document.getElementById('certifications')?.scrollIntoView({ behavior: 'smooth' })}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    Certications
+                    Certifications
                   </button>
                 </li>
                 <li>

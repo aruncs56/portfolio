@@ -11,7 +11,7 @@ export default function Certification() {
     }, []);
 
     return (
-        <section id="certications" className="py-12 px-4 max-w-4xl mx-auto scroll-mt-24">
+        <section id="certifications" className="py-12 px-4 max-w-4xl mx-auto scroll-mt-24">
             <h2 className="text-3xl font-bold mb-6 text-center text-blue-700">Azure Certifications</h2>
             <div className="overflow-x-auto rounded-lg shadow-lg bg-white">
                 <table className="min-w-full divide-y divide-gray-200">
