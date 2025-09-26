@@ -45,7 +45,7 @@ const Header = () => {
               onClick={() => scrollToSection('certifications')}
               className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
-              certifications
+              Certifications
             </button>
             <button
               onClick={() => scrollToSection('appliedskills')}
