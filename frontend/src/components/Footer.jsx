@@ -110,7 +110,7 @@ const Footer = () => {
 
         <div className="py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Arun Kumar M. All rights reserved. Built with React & Tailwind CSS.
+            © {currentYear} Arun Kumar M. All rights reserved.
           </p>
           
           <button
