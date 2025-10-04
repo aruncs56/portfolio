@@ -18,5 +18,10 @@
         "title": "Accelerate app development by using GitHub Copilot",
         "credentialId": "1C5A95D189E9ACEB",
         "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/1C5A95D189E9ACEB?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Migrate SQL Server workloads to Azure SQL Database",
+        "credentialId": "CECAA2C2096380EA",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/CECAA2C2096380EA?sharingId=DC05F8FAF2B0E8C6"   
     }
 ]
