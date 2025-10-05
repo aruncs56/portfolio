@@ -23,5 +23,10 @@
         "title": "Migrate SQL Server workloads to Azure SQL Database",
         "credentialId": "CECAA2C2096380EA",
         "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/CECAA2C2096380EA?sharingId=DC05F8FAF2B0E8C6"   
+    },
+    {
+        "title": "Deploy cloud-native apps using Azure Container Apps",    
+        "credentialId": "D2DA99542B8A7464",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/D2DA99542B8A7464?sharingId=DC05F8FAF2B0E8C6"
     }
 ]
