@@ -40,5 +40,17 @@
         "credentialId": "D4D4C4A5D3B1E6F7",
         "certificationNumber": "12345X-67890Y",
         "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/AF884A139559B713?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Azure Data Fundamentals",
+        "credentialId": "4833F9D843EEB708",    
+        "certificationNumber": "A9FAB3-C32934",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/4833F9D843EEB708?sharingId=DC05F8FAF2B0E8C6"
+    },
+    {
+        "title": "Azure Database Administrator Associate",
+        "credentialId": "C9BC188028AED48B",
+        "certificationNumber": "1C0664-W4CB59",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/C9BC188028AED48B?sharingId=DC05F8FAF2B0E8C6"
     }
 ]
