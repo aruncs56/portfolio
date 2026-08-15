@@ -1,0 +1,37 @@
+[
+    {
+        "code": "AI-901",
+        "title": "Microsoft Azure AI Fundamentals",
+        "credentialId": "",
+        "certificationNumber": "",
+        "certLink": ""
+    },
+    {
+        "code": "DP-800",
+        "title": "Developing AI-Enabled Database Solutions",
+        "credentialId": "",
+        "certificationNumber": "1492AL-FF36B6",
+        "certLink": ""
+    },
+    {
+        "code": "AI-103",
+        "title": "Developing AI Apps and Agents on Azure",
+        "credentialId": "",
+        "certificationNumber": "5DD0Q8-5F3F97",
+        "certLink": ""
+    },
+    {
+        "code": "AI-300",
+        "title": "Operationalizing Machine Learning and Generative AI Solutions",
+        "credentialId": "",
+        "certificationNumber": "706FFB-24CA20",
+        "certLink": ""
+    },
+    {
+        "code": "AI-200",
+        "title": "Developing AI Cloud Solutions on Azure",
+        "credentialId": "2A70316BA397283A",
+        "certificationNumber": "E5CI31-B4111C",
+        "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/ArunKumarM-3486/2A70316BA397283A?sharingId=DC05F8FAF2B0E8C6"
+    }
+]
